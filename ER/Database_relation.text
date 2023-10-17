@@ -1,0 +1,48 @@
+// / Address Collection
+{
+    "_id": ObjectId("address_id_1"),
+    "street": "123 Main St",
+    "city": "CityName",
+    "country": "countryName"
+}
+
+// Person Collection
+{
+    "_id": ObjectId("person_id_1"),
+    "name": "John Doe",
+    "address_id": ObjectId("address_id_1")
+}
+
+// Student Collection
+{
+    "_id": ObjectId("student_id_1"),
+    "Name": "name",
+    "student_number": "Undergraduate",
+    "person_id": ObjectId("person_id_1")
+}
+
+// Professor Collection
+{
+    "_id": ObjectId("professor_id_1"),
+    "Name": "name",
+    "Salary": "salary",
+    "person_id": ObjectId("person_id_1")
+}
+
+// Vehicle Collection
+{
+    "_id": ObjectId("vehicle_id_1"),
+    "Name": "Toyota",
+    "model_number": "Camry",
+    "plate_number": "ABC123",
+    "owner_id": ObjectId("person_id_1")
+}
+
+// Drive Collection (assuming it's a relationship)
+{
+    "_id": ObjectId("drive_id_1"),
+    "Distance":"dhhf",
+    "driver_id": ObjectId("person_id_1"),
+    "vehicle_id": ObjectId("vehicle_id_1"),
+    "drive_date": ISODate("2023-10-16T10:00:00Z")
+}
